@@ -20,7 +20,7 @@
 ;;;
 
 (deftheme deep-thought
-  "deep-thought By: Jasonm23 / Created 2013-FEB-21")
+  "deep-thought By: Jason Milkins / Created 2013-FEB-21")
 
 (custom-theme-set-variables
  'deep-thought
@@ -40,7 +40,8 @@
  '(variable-pitch
    ((t (:family "Sans Serif"))))
 
- '(escape-glyph ;; Things like  and other control chars.
+ '(escape-glyph ;; Things like 
+ and other control chars.
    ((t (:foreground "#FFF" :background "#111d3c"))))
 
  ;; Line Numbers (linum-mode)
