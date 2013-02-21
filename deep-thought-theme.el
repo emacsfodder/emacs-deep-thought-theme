@@ -1,4 +1,5 @@
-;;; deep-thought-theme.el --- a color theme for Emacs24, when the answer is 42.
+;;; deep-thought-theme.el --- an Emacs 24 theme created by a pan-dimensional, hyper-intelligent species of beings (whose three dimensional protrusions into our universe are ordinary white mice) to come up with the Answer to The Ultimate Question of Life, the Universe, and Everything. ... well. ok, perhaps not ( crib-sheet : answer is 42 )
+;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;; Url: https://github.com/jasonm23/emacs-deep-thought-theme
 ;;; Version: 0.0.1
@@ -81,8 +82,14 @@
    ((t (:background "#0a101f"))))
 
  ;; show-paren-mode
- `(show-paren-match ((t (:foreground "#fff" :background "#256" ))))
- `(show-paren-mismatch ((t (:foreground "#fff" :background "#A00" ))))
+ '(show-paren-match ((t (:foreground "#fff" :background "#256" ))))
+ '(show-paren-mismatch ((t (:foreground "#fff" :background "#F80" ))))
+
+ ;; flymake
+ '(flymake-errline ((t (:underline "#FF3100" :background nil :slant italic ))))
+ '(flymake-warnline ((t (:underline "#443177" :background nil :slant italic ))))
+
+ ;; ---- add more mode customizations in due course.
 
  ;; Secondary region
  '(secondary-selection
