@@ -5,4 +5,4 @@ an Emacs 24 theme created while under the influence of a pan-dimensional, hyper-
 
 # Screenshot 
 
-![](https://raw.github.com/jasonm23/emacs-deep-thought-theme/master/deep-thought.png)
+![](https://raw.github.com/jasonm23/emacs-deep-thought-theme/master/deep-thought-theme.png)
