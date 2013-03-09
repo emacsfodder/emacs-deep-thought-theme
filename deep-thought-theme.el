@@ -2,7 +2,7 @@
 ;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;; Url: https://github.com/jasonm23/emacs-deep-thought-theme
-;;; Version: 0.0.2
+;;; Version: 0.0.4
 ;;;
 ;;; This program is free software: you can redistribute it and/or modify
 ;;; it under the terms of the GNU General Public License as published by
@@ -17,10 +17,11 @@
 ;;; along with GNU Emacs.
 ;;;
 ;;; This file is not a part of Emacs
+;;; http://emacsfodder.github.com
 ;;;
 
 (deftheme deep-thought
-  "deep-thought By: Jason Milkins / Created 2013-FEB-21")
+  "deep-thought By: Jason Milkins - aka: ocodo + emacsfodder")
 
 (custom-theme-set-variables
  'deep-thought
@@ -32,7 +33,9 @@
  'deep-thought
 
  '(default
-    ((t (:foreground "#ffffff" :background "#000F14" ))))
+   ((((class color) (min-colors 88)) (:foreground "#FFF" :background "#000F14"))
+    (((class color) (min-colors 16)) (:foreground "#fff" :background "#000"))
+    (((class color) (min-colors 8)) (:foreground "#fff" :background "#000")) (t (:inverse-video t))))
 
  '(fixed-pitch
    ((t (:family "Monospace"))))
@@ -40,8 +43,7 @@
  '(variable-pitch
    ((t (:family "Sans Serif"))))
 
- '(escape-glyph ;; Things like 
- and other control chars.
+ '(escape-glyph
    ((t (:foreground "#FFF" :background "#111d3c"))))
 
  ;; Line Numbers (linum-mode)
@@ -58,6 +60,7 @@
 
  '(mode-line-inactive
    ((t (:weight light :box nil :background "#102339" :foreground "#000000" :inherit (mode-line)))))
+
  '(mode-line-emphasis
    ((t (:weight bold))))
 
@@ -69,7 +72,7 @@
 
  ;; Cursor
  '(cursor
-   ((t (:foreground "#ffffff" :background "#474480"))))
+   ((t (:foreground "#ffffff" :background "#3748A0"))))
 
  ;; Minibuffer
  '(minibuffer-prompt
@@ -98,12 +101,11 @@
 
  ;; font-lock - syntax
  '(font-lock-builtin-face              ((t (:foreground "#106590"))))
- '(font-lock-comment-face              ((t (:foreground "#105f89"))))
- '(font-lock-comment-delimiter-face    ((t (:foreground "#1078a2" ))))
+ '(font-lock-comment-face              ((t (:foreground "#105f89" :italic t ))))
+ '(font-lock-comment-delimiter-face    ((t (:foreground "#1078a2" :italic t ))))
  '(font-lock-doc-face                  ((t (:inherit (font-lock-string-face)))))
  '(font-lock-function-name-face        ((t (:foreground "#1083be"))))
  '(font-lock-keyword-face              ((t (:foreground "#1a8da7"))))
- '(font-lock-negation-char-face        ((t nil)))
  '(font-lock-preprocessor-face         ((t (:inherit (font-lock-builtin-face)))))
  '(font-lock-regexp-grouping-backslash ((t (:inherit (bold)))))
  '(font-lock-regexp-grouping-construct ((t (:inherit (bold)))))
@@ -112,6 +114,7 @@
  '(font-lock-type-face                 ((t (:foreground "#1f5e8a"))))
  '(font-lock-variable-name-face        ((t (:foreground "#1e8eb8"))))
  '(font-lock-warning-face              ((t (:weight bold :foreground "#FF0000"))))
+ '(font-lock-negation-char-face        ((t (:inherit font-lock-warning-face)))
 
  ;; Hightlight
  '(highlight
@@ -153,14 +156,12 @@
  '(tooltip ((default nil) (nil nil)))
 
  '(isearch
-   ((((class color) (min-colors 88) (background light)) (:foreground "#1e99ee" :background "#444444"))
-    (((class color) (min-colors 88) (background dark)) (:foreground "#114361" :background "##444444"))
-    (((class color) (min-colors 16)) (:foreground "#1088cc" :background "#444444"))
-    (((class color) (min-colors 8)) (:foreground "#1088cc" :background "#444444")) (t (:inverse-video t))))
+   ((((class color) (min-colors 88)) (:foreground "#FF6600" :background "#000"))
+    (((class color) (min-colors 16)) (:foreground "#1088cc" :background "#000"))
+    (((class color) (min-colors 8)) (:foreground "#1088cc" :background "#000")) (t (:inverse-video t))))
 
  '(isearch-fail
-   ((((class color) (min-colors 88) (background light)) (:background "#ffaaaa"))
-    (((class color) (min-colors 88) (background dark)) (:background "#880000"))
+   ((((class color) (min-colors 88)) (:background "#880000"))
     (((class color) (min-colors 16)) (:background "#FF0000"))
     (((class color) (min-colors 8)) (:background "#FF0000"))
     (((class color grayscale)) (:foreground "#888888")) (t (:inverse-video t))))
@@ -178,11 +179,9 @@
     (((class color) (min-colors 8) (background dark)) (:foreground "#ffffff" :background "#159")) (((type tty) (class mono)) (:inverse-video t)) (t (:background "#888888"))))
 
  '(next-error ((t (:inherit (region)))))
-
  '(query-replace ((t (:inherit (isearch)))))
 
  )
-
 
 ;; Rainbow delimiters
 (defun deep-thought-rainbow-delim-set-face ()
