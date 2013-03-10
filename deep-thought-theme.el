@@ -2,7 +2,7 @@
 ;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;; Url: https://github.com/jasonm23/emacs-deep-thought-theme
-;;; Version: 0.0.4
+;;; Version: 0.0.5
 ;;;
 ;;; This program is free software: you can redistribute it and/or modify
 ;;; it under the terms of the GNU General Public License as published by
@@ -114,7 +114,7 @@
  '(font-lock-type-face                 ((t (:foreground "#1f5e8a"))))
  '(font-lock-variable-name-face        ((t (:foreground "#1e8eb8"))))
  '(font-lock-warning-face              ((t (:weight bold :foreground "#FF0000"))))
- '(font-lock-negation-char-face        ((t (:inherit font-lock-warning-face)))
+ '(font-lock-negation-char-face        ((t (:inherit font-lock-warning-face))))
 
  ;; Hightlight
  '(highlight
