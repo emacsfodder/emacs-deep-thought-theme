@@ -21,7 +21,7 @@
 ;;;
 
 (deftheme deep-thought
-  "deep-thought By: Jason Milkins - emacsfodder.github.com")
+  "deep-thought-theme By: Jason Milkins - emacsfodder.github.com")
 
 (custom-theme-set-variables
  'deep-thought
