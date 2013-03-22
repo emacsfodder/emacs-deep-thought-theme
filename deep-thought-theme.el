@@ -201,6 +201,12 @@
 
 (eval-after-load "rainbow-delimiters" '(deep-thought-rainbow-delim-set-face))
 
+;; Add to custom-theme-load-path
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
 (provide-theme 'deep-thought)
 
 ;;; deep-thought-theme.el ends here
