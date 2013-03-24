@@ -2,9 +2,10 @@
 ;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;; Url: https://github.com/jasonm23/emacs-deep-thought-theme
-;;; Version: 0.0.7
+;;; Version: 0.0.8
 ;;;
 ;;; Changelog :
+;;; 0.0.8 : Added main-line and powerline support
 ;;; 0.0.7 : Added auto load for adding to custom theme path
 ;;;
 ;;; This program is free software: you can redistribute it and/or modify
@@ -28,6 +29,10 @@
 
 (custom-theme-set-variables
  'deep-thought
+ '(main-line-color1 "#333333")
+ '(main-line-color2 "#111111")
+ '(powerline-color1 "#333333")
+ '(powerline-color2 "#111111")
  '(fringe-mode 6 nil (fringe))
  '(linum-format " %7d ")
  )
