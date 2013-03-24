@@ -2,9 +2,10 @@
 ;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;; Url: https://github.com/jasonm23/emacs-deep-thought-theme
-;;; Version: 0.1.0
+;;; Version: 0.1.1
 ;;;
 ;;; Changelog :
+;;; 0.1.1 : Updated modeline, region, paren-match/mismatch and flymake colors.
 ;;; 0.1.0 : Added rainbow-mode switch for editing
 ;;; 0.0.9 : Changed powerline/main-line colors
 ;;; 0.0.8 : Added main-line and powerline support
@@ -69,10 +70,10 @@
 
  ;; Mode-line / status line
  '(mode-line
-   ((t (:background "#1b283d" :box nil :foreground "#3c86e4" :height 85))))
+   ((t (:background "#001520" :box nil :foreground "#FFFFFF" :height 85))))
 
  '(mode-line-inactive
-   ((t (:weight light :box nil :background "#102339" :foreground "#000000" :inherit (mode-line)))))
+   ((t (:weight light :box nil :background "#001520" :foreground "#000000" :inherit (mode-line)))))
 
  '(mode-line-emphasis
    ((t (:weight bold))))
@@ -96,15 +97,15 @@
 
  ;; Region
  '(region
-   ((t (:background "#0a101f"))))
+   ((t (:background "#102530"))))
 
  ;; show-paren-mode
  '(show-paren-match ((t (:foreground "#fff" :background "#256" ))))
- '(show-paren-mismatch ((t (:foreground "#fff" :background "#F80" ))))
+ '(show-paren-mismatch ((t (:foreground "#fff" :background "#700" ))))
 
  ;; flymake
- '(flymake-errline ((t (:underline "#FF3100" :background nil :slant italic ))))
- '(flymake-warnline ((t (:underline "#443177" :background nil :slant italic ))))
+ '(flymake-errline ((t (:underline "#881100" :background nil :slant italic ))))
+ '(flymake-warnline ((t (:underline "#345197" :background nil :slant italic ))))
 
  ;; ---- add more mode customizations in due course.
 
