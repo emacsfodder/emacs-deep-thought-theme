@@ -2,10 +2,11 @@
 ;;;
 ;;; Author: Jason Milkins <jasonm23@gmail.com>
 ;;; Url: https://github.com/jasonm23/emacs-deep-thought-theme
-;;; Version: 0.0.9
+;;; Version: 0.1.0
 ;;;
 ;;; Changelog :
-;;; 0.0.9 : Changed powerline/modeline colors
+;;; 0.1.0 : Added rainbow-mode switch for editing
+;;; 0.0.9 : Changed powerline/main-line colors
 ;;; 0.0.8 : Added main-line and powerline support
 ;;; 0.0.7 : Added auto load for adding to custom theme path
 ;;;
@@ -217,5 +218,9 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'deep-thought)
+
+;; Local Variables:
+;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
+;; End:
 
 ;;; deep-thought-theme.el ends here
